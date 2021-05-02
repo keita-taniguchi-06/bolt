@@ -22,17 +22,13 @@
   margin: 0 auto;
 }
 .header_inner {
-  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .bolt_logo {
-  float: left;
+  padding: 15px 0;
   color: #333;
-}
-.contact_box{
-  float: right;
-  text-align: center;
-  position: relative;
-  top: 15px;
 }
 .contact_btn {
   font-size: 12px;
@@ -45,10 +41,11 @@
 .contact_btn:hover {
   color: #333;
 }
+.main {
+  padding-top: 78px;
+}
 .title_box {
-  width: 100%;
   background-color: #f2f2f2;
-  margin-top: 78px;
 }
 .title_box_inner {
   padding: 250px 0;
@@ -65,7 +62,6 @@
   margin-top: 20px;
 }
 .section_box {
-  width: 100%;
   background-color: #74cfae;
 }
 .section_box_inner {
@@ -84,16 +80,16 @@
   font-family: "Raleway";
   text-align: center;
   color: white;
-  margin-bottom: 35px;
+  margin-top: 20px;
 }
 .what_sub_text {
   font-size: 20px;
   line-height: 150%;
   color: white;
   text-align: center;
+  margin-top: 35px;
 }
 .article_box {
-  width: 100%;
   background-color: #f2f2f2;
 }
 .article_box_inner {
@@ -102,29 +98,30 @@
 .article_title {
   font-size: 24px;
   font-family: "Raleway";
-  margin-bottom: 40px;
   text-align: center;
 }
 .article_link {
   line-height: 0;
 }
-.article_img {
+.article_link li {
   display: block;
-  float: left;
+  border-style: none;
   margin-left: 100px;
   margin-top: 80px;
-  border-style: none;
+  float: left;
+}
+.article_img {
   opacity: 0.7;
   transition: 00.3s;
 }
 .article_img:hover {
   opacity: 1;
 }
-.article_img:nth-child(3n+1) {
+.article_link li:nth-child(3n+1) {
   margin-left: 0;
 }
-.article_img:nth-child(-n+3) {
-  margin-top: 0;
+.article_link li:nth-child(-n+3) {
+  margin-top: 40px;
 }
 .article_text {
   margin-top: 90px;
@@ -153,7 +150,6 @@
   color: #333;
 }
 .skill_box {
-  width: 100%;
   background-color: #4e4e4e;
 }
 .skill_box_inner {
@@ -164,11 +160,11 @@
   font-family: "Raleway";
   text-align: center;
   color: white;
-  margin-bottom: 60px;
 }
 .for_flex_box {
   display: flex;
   justify-content: center;
+  margin-top: 60px;
 }
 .skill {
   margin-left: 180px;
@@ -183,17 +179,19 @@
   margin-top: 10px;
 }
 .nav_box {
-  width: 100%;
   background-color: #f2f2f2;
 }
 .nav_box_inner {
   padding: 200px 0;
 }
 .nav_icon_box {
+  display: flex;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
-.nav_icon_box li {
-  display: inline-block;
+.nav_icon_box a {
+  display: block;
 }
 .nav_icon {
   width: 185px;

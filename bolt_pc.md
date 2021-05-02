@@ -11,3 +11,26 @@
     例) 〇〇クラスに××を指定して△△になるようにしました。
 ----------
 
+1.「contact」のボタンをいい感じに
+-floatでの修正がわからなかったので「display-flex」に修正しました。
+
+2.mainタグにpaddingのスタイルを付けてheaderと重ならないようにする
+-mainタグにクラスを付けてpadding-topで余白を作成しました。
+
+3.header以外につけているwidth100%を削除
+-header以外の不必要なwidth100%をすべて削除しました。
+
+4.section内のタイトルを下にずらす
+-section内のタイトルとテキストにmargin-topを付けて余白の調整をしました。
+
+5．marginで余白を取る際すべてtopで合わせる
+-margin-bottomで取っていた余白を全てtopで取れるよう修正しました。
+
+6.title以降のすべてのhタグをh2に修正
+-h3.h4となっていた部分をh2に修正しました。
+
+7.articleの項目をli構造にする
+-ul.li構造に修正し、直接imgのクラスについていたmarginなどをliに付け替えました。
+
+8.navタグおかしくなっている
+-display-flexで横並びにしてaタグのdisplay要素をblockにしてサイズをli要素と同じサイズにしました
