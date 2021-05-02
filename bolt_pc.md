@@ -19,6 +19,7 @@
 
 3.header以外につけているwidth100%を削除
   -header以外の不必要なwidth100%をすべて削除しました。
+  
 4.section内のタイトルを下にずらす
   -section内のタイトルとテキストにmargin-topを付けて余白の調整をしました。
 
