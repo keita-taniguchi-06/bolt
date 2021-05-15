@@ -4,8 +4,17 @@
   width: 100%;
   color: #333;
 }
+a {
+  display: inline-block
+}
 .Raleway {
   font-family: "Raleway";
+}
+.for_pc_tab {
+  display: block;
+}
+.for_sp {
+  display: none;
 }
 .header {
   width: 100%;
@@ -26,14 +35,13 @@
 }
 .header_inner {
   padding: 15px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .bolt_logo {
   color: #333;
+  align-items: center;
 }
 .contact_btn {
+  float: right;
   font-size: 12px;
   padding: 14px 12px;
   color: #fff;
@@ -191,9 +199,6 @@
   justify-content: center;
   align-items: center;
 }
-.nav_icon_box a {
-  display: block;
-}
 .nav_icon {
   width: 185px;
   padding: 30px 0;
@@ -211,4 +216,91 @@
   padding: 20px 0 25px;
   color: #fff;
   text-align: right;
+}
+@media screen and (max-width:1179px) {
+ .main {
+   text-align: center;
+ }
+ .inner {
+   width: 97%;
+ }
+ .section_box_inner {
+   display: inline-block;
+   padding: 50px 0 25px;
+ }
+ .what_img {
+   width: 100%;
+ }
+ .section_text {
+   width: 96%;
+   padding: 0 2%;
+ }
+ .article_link li {
+   float: none;
+   margin-top: 0;
+   margin-left: 0;
+ }
+ .article_link li:nth-child(4n) {
+   margin-top: 80px;
+ }
+ .article_text {
+   margin-top: 80px;
+ }
+ .article_text_inner {
+   display: block;
+   width: 100%;
+ }
+ .article_btn {
+   margin-left: 0;
+   margin-top: 40px;
+ }
+ .for_flex_box {
+   display: block;
+ }
+ .skill {
+   margin-top: 88px;
+   margin-left: 0;
+ }
+ .skill:first-child {
+   margin-top: 0;
+ }
+}
+@media screen and (max-width:767px) {
+ .for_pc_tab {
+   display: none;
+ }
+ .for_sp {
+   display: block;
+ }
+ .hamburger_btn {
+   float: right;
+   border: solid 1px #ddd;
+   border-radius: 4px;
+   padding: 10px;
+   width: 30px;
+ }
+ .hamburger_btn span {
+   display: block;
+   background-color: #ddd;
+   height: 3px;
+   margin-top: 3px;
+ }
+ .hamburger_btn span:first-child {
+   margin-top: 0;
+ }
+ .title_box_inner {
+   padding: 160px 0 130px;
+ }
+ .theme {
+   font-size: 80px;
+ }
+ .nav_box_inner {
+   padding: 50px 0;
+ }
+ .nav_icon_box {
+   display: block;
+ }
+ .nav_icon {
+   width: 100%;
+ }
 }
